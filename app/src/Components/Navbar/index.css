@@ -1,0 +1,7 @@
+.heightAdjustment001{
+    max-height: 25vh;
+    height: 100%;
+}
+.heightAdjustment002{
+    max-height: inherit;
+}
