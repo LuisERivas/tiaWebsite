@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './index.css'
 
-class AppointmentPage extends Component {
+class ReviewsPage extends Component {
   render () {
     return (
       <div className='bg-dark'>
@@ -9,7 +9,7 @@ class AppointmentPage extends Component {
           <div className='col bg-primary'>
             <div className='row'>
               <div className='col'>
-                Appointment page
+                Reviews page
               </div>
             </div>
           </div>
@@ -18,4 +18,4 @@ class AppointmentPage extends Component {
     )
   }
 }
-export default AppointmentPage
+export default ReviewsPage
