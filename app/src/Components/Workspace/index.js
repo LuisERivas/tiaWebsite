@@ -11,11 +11,16 @@ import WhatsNewPage from '../WhatsNewPage'
 import ServicesPage from '../ServicesPage'
 import EyewearPage from '../EyewearPage'
 import ContactPage from '../ContactPage'
+import HomeBannerImage from '../HomeBannerImage'
+
 class Workspace extends Component {
   render () {
     return (
       <div className='bg-dark'>
-        <div className='container '>
+        <Switch>
+          <Route exact path='/' component={HomeBannerImage} />
+        </Switch>
+        <div className='container'>
           <div className='col bg-danger'>
             <div className='row'>
               <div className='col p-0 m-0'>
@@ -27,7 +32,6 @@ class Workspace extends Component {
                   <Route exact path='/ServicesPage' component={ServicesPage} />
                   <Route exact path='/EyewearPage' component={EyewearPage} />
                   <Route exact path='/ContactPage' component={ContactPage} />
-
                 </Switch>
 
               </div>
