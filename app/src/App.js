@@ -2,29 +2,31 @@ import React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import './App.css'
 import Homepage from './Components/Homepage'
-import Navbar from './Components/Navbar'
+import NavbarTop from './Components/NavbarTop'
 import LogoAndContactInfoTopOfPage from './Components/LogoAndContactInfoTopOfPage'
+import AppointmentPage from './Components/AppointmentPage'
+import Workspace from './Components/Workspace'
 
 function App () {
   return (
     <div className='App bg-danger'>
       <Router>
         <LogoAndContactInfoTopOfPage />
-        <Navbar />
+        <NavbarTop />
+        <Workspace>
+          <Switch>
+            <Route path='/' exact component={Homepage} />
+            <Route exact path='/AppointmentPage' component={AppointmentPage} />
+          </Switch>
+        </Workspace>
 
-        <Switch>
-          <Route path='/'>
-            <Homepage />
-          </Route>
-        </Switch>
       </Router>
     </div>
   )
