@@ -6,7 +6,11 @@ import {
 import './index.css'
 import Homepage from '../Homepage'
 import AppointmentPage from '../AppointmentPage'
-
+import ReviewsPage from '../ReviewsPage'
+import WhatsNewPage from '../WhatsNewPage'
+import ServicesPage from '../ServicesPage'
+import EyewearPage from '../EyewearPage'
+import ContactPage from '../ContactPage'
 class Workspace extends Component {
   render () {
     return (
@@ -18,6 +22,12 @@ class Workspace extends Component {
                 <Switch>
                   <Route exact path='/' component={Homepage} />
                   <Route exact path='/AppointmentPage' component={AppointmentPage} />
+                  <Route exact path='/ReviewsPage' component={ReviewsPage} />
+                  <Route exact path='/WhatsNewPage' component={WhatsNewPage} />
+                  <Route exact path='/ServicesPage' component={ServicesPage} />
+                  <Route exact path='/EyewearPage' component={EyewearPage} />
+                  <Route exact path='/ContactPage' component={ContactPage} />
+
                 </Switch>
 
               </div>

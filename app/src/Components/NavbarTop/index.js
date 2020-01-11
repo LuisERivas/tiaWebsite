@@ -19,27 +19,27 @@ class NavbarTop extends Component {
               <div className='col container-fluid bg-dark'>
                 <div className='row pt-2 pb-2'>
                   
-                  <Navbar>
+                  <Navbar className='container-fluid'>
                     <div className='col'>
-                      <Link to='/' className='container-fluid bg-dark ' > Home</Link>
+                      <Link to='/' className=' bg-light ' > Home</Link>
                     </div>
                     <div className='col'>
-                      <Link className='' to='/AppointmentPage'> Appointment </Link>
+                      <Link className='bg-light' to='/AppointmentPage'> Appointment </Link>
                     </div>
                     <div className='col'>
-                      <Link to='' className='container-fluid bg-dark'> Reviews </Link>
+                      <Link to='/ReviewsPage' className=' bg-light'> Reviews </Link>
                     </div>
                     <div className='col'>
-                      <Link to='' className='container-fluid bg-dark'> What's New </Link>
+                      <Link to='/WhatsNewPage' className=' bg-light'> What's New </Link>
                     </div>
                     <div className='col'>
-                      <Link to='' className='container-fluid bg-dark'> Services </Link>
+                      <Link to='/ServicesPage' className=' bg-light'> Services </Link>
                     </div>
                     <div className='col'>
-                      <Link to='' className='container-fluid bg-dark'> Eyewear </Link>
+                      <Link to='/EyewearPage' className=' bg-light'> Eyewear </Link>
                     </div>
                     <div className='col'>
-                      <Link to='' className='container-fluid bg-dark'> Contact </Link>
+                      <Link to='/ContactPage' className='bg-light'> Contact </Link>
                     </div>
                   </Navbar>
                 </div>
