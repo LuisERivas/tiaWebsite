@@ -5,7 +5,7 @@ import HomePageBannerImage from '../HomePageBannerImageAsset/HomePageBannerImage
 class HomeBannerImage extends Component {
   render () {
     return (
-      <div className='bg-light'>
+      <div className=''>
         <img src={HomePageBannerImage} className='homeBannerSize' alt='banner Image' />
       </div>
     )

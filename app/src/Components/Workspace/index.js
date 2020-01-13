@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom'
 import './index.css'
-import Homepage from '../Homepage'
+import HomepageProductDisplay from '../HomepageProductDisplay'
 import AppointmentPage from '../AppointmentPage'
 import ReviewsPage from '../ReviewsPage'
 import WhatsNewPage from '../WhatsNewPage'
@@ -21,11 +21,11 @@ class Workspace extends Component {
           <Route exact path='/' component={HomeBannerImage} />
         </Switch>
         <div className='container'>
-          <div className='col bg-danger'>
+          <div className='col'>
             <div className='row'>
               <div className='col p-0 m-0'>
                 <Switch>
-                  <Route exact path='/' component={Homepage} />
+                  <Route exact path='/' component={HomepageProductDisplay} />
                   <Route exact path='/AppointmentPage' component={AppointmentPage} />
                   <Route exact path='/ReviewsPage' component={ReviewsPage} />
                   <Route exact path='/WhatsNewPage' component={WhatsNewPage} />

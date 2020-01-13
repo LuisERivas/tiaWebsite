@@ -8,7 +8,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import './App.css'
-import Homepage from './Components/Homepage'
+import Homepage from './Components/HomepageProductDisplay'
 import NavbarTop from './Components/NavbarTop'
 import LogoAndContactInfoTopOfPage from './Components/LogoAndContactInfoTopOfPage'
 import AppointmentPage from './Components/AppointmentPage'
@@ -16,7 +16,7 @@ import Workspace from './Components/Workspace'
 
 function App () {
   return (
-    <div className='App bg-danger'>
+    <div className='App '>
       <Router>
         <LogoAndContactInfoTopOfPage />
         <NavbarTop />
