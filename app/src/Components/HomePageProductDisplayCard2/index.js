@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
 import Card from 'react-bootstrap/Card'
 import './index.css'
+import HomePageProduct2Image from '../HomePageProduct2Image'
 
-class HomePageProductDisplayCard extends Component {
+class HomePageProductDisplayCard2 extends Component {
   render () {
     return (
       <div>
         <Card>
-          <Card.Img variant='top' src='' />
+          <HomePageProduct2Image />
           <Card.Body>
             <Card.Text>
-            product lives here
+            Vision Exams
             </Card.Text>
           </Card.Body>
         </Card>
@@ -20,4 +21,4 @@ class HomePageProductDisplayCard extends Component {
   }
 }
 
-export default HomePageProductDisplayCard
+export default HomePageProductDisplayCard2
